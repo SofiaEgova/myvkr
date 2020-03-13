@@ -25,6 +25,13 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	compile('org.postgresql:postgresql')
+	compile('org.projectlombok:lombok')
+//	compile('javax.xml.bind:jaxb-api')
+//	compile('javax.xml.bind:jaxb-core')
+//	compile('javax.xml.bind:jaxb-impl')
+	compile("org.springframework.boot:spring-boot-starter-thymeleaf")
 }
 
 test {
